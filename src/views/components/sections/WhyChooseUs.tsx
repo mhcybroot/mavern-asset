@@ -45,6 +45,15 @@ export const WhyChooseUs: React.FC = () => {
 
   return (
     <section id="why-us" className="py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute right-0 top-6 w-96 h-96 pointer-events-none opacity-10 z-0">
+        <img
+          src="/assets/cosmic/cosmic-security-shield.jpg"
+          alt=""
+          className="w-full h-full object-cover rounded-full mix-blend-multiply"
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="The MAVERN Advantage"
@@ -58,7 +67,7 @@ export const WhyChooseUs: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-3xl bg-white border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 group shadow-xs"
+                className="p-6 rounded-3xl bg-white/95 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 group shadow-xs backdrop-blur-xs"
               >
                 <div className={`w-12 h-12 rounded-2xl border ${pt.color} flex items-center justify-center mb-5 shadow-xs group-hover:scale-105 transition-transform`}>
                   <Icon className="w-6 h-6" />

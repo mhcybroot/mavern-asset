@@ -49,7 +49,17 @@ export const BeforeAfterSlider: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-slate-50 text-slate-900 border-b border-slate-200 relative overflow-hidden">
+    <section className="py-20 bg-slate-50/80 text-slate-900 border-b border-slate-200 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute inset-0 pointer-events-none opacity-10 z-0">
+        <img
+          src="/assets/cosmic/layered-mist-mountains.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center mix-blend-multiply"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/40 via-transparent to-slate-50/60" />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="Transformation Showcase"

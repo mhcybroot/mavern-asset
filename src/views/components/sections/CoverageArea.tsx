@@ -12,8 +12,17 @@ export const CoverageArea: React.FC = () => {
   ];
 
   return (
-    <section id="coverage" className="py-20 bg-white text-slate-900 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="coverage" className="py-20 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute right-[-40px] bottom-[-40px] w-[500px] h-[500px] pointer-events-none opacity-12 z-0">
+        <img
+          src="/assets/cosmic/neon-wireframe-globe.jpg"
+          alt=""
+          className="w-full h-full object-cover rounded-full mix-blend-multiply"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-6">
@@ -24,7 +33,7 @@ export const CoverageArea: React.FC = () => {
               align="left"
             />
 
-            <div className="bg-slate-50 rounded-3xl p-6 border border-slate-200 mb-6 shadow-xs">
+            <div className="bg-slate-50/90 rounded-3xl p-6 border border-slate-200 mb-6 shadow-xs backdrop-blur-xs">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-slate-900 rounded-2xl text-white shrink-0 shadow-sm">
                   <MapPin className="w-6 h-6 text-amber-400" />
@@ -43,7 +52,7 @@ export const CoverageArea: React.FC = () => {
             <div className="flex items-center gap-4">
               <a
                 href={`tel:${COMPANY_INFO.contact.phone.replace(/[^0-9]/g, "")}`}
-                className="inline-flex items-center gap-2 px-5 py-3 bg-slate-900 hover:bg-slate-800 rounded-xl font-bold text-xs uppercase tracking-wider text-white transition shadow-sm"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-slate-950 hover:bg-slate-800 rounded-xl font-bold text-xs uppercase tracking-wider text-white transition shadow-sm"
               >
                 <Phone className="w-4 h-4 text-amber-400" />
                 <span>Call Dispatch Line</span>
@@ -56,7 +65,7 @@ export const CoverageArea: React.FC = () => {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm">
+            <div className="bg-slate-50/90 rounded-3xl p-8 border border-slate-200 shadow-sm backdrop-blur-xs">
               <h3 className="text-xl font-extrabold text-slate-900 mb-6 flex items-center gap-2 font-display">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
                 Active Preservation Zones

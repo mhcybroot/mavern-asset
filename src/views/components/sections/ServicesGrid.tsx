@@ -22,8 +22,18 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onInstantQuote }) =>
   } = useServicesViewModel();
 
   return (
-    <section id="services" className="py-20 bg-white border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 bg-white border-b border-slate-200 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute inset-0 pointer-events-none opacity-8 z-0">
+        <img
+          src="/assets/cosmic/mountain-ring-planet.jpg"
+          alt=""
+          className="w-full h-full object-cover object-top mix-blend-multiply"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/50" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="11 Core Capabilities"
           title="Full-Lifecycle Asset Preservation & Turnover Services"
@@ -40,7 +50,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onInstantQuote }) =>
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
                   activeCategory === cat.value
                     ? "bg-slate-900 text-white shadow-sm"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200"
+                    : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
                 }`}
               >
                 {cat.label}
@@ -55,7 +65,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onInstantQuote }) =>
               placeholder="Search 11 services..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-400"
+              className="w-full pl-10 pr-4 py-2 bg-white border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-400 shadow-2xs"
             />
           </div>
         </div>

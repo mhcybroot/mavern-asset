@@ -8,11 +8,21 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onGetStarted }) => {
   return (
-    <section className="relative bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 pt-20 pb-28 overflow-hidden border-b border-slate-200">
+    <section className="relative bg-white text-slate-900 pt-20 pb-28 overflow-hidden border-b border-slate-200">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute inset-0 pointer-events-none opacity-10 z-0">
+        <img
+          src="/assets/cosmic/hero-sun-mountains.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center mix-blend-multiply"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/60" />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-slate-800 text-xs font-bold mb-8 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-slate-800 text-xs font-bold mb-8 shadow-xs">
             <Award className="w-4 h-4 text-amber-600" />
             <span>{COMPANY_INFO.name} • {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state}</span>
           </div>
@@ -43,25 +53,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onGetStarted }) => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl text-left">
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
+            <div className="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
               <div className="flex items-center gap-1.5 text-amber-600 text-xs font-bold uppercase mb-1">
                 <Clock className="w-4 h-4" /> 24-48 Hr Fast Turn
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900">Inspections & Securing</div>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
+            <div className="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
               <div className="flex items-center gap-1.5 text-blue-600 text-xs font-bold uppercase mb-1">
                 <ShieldCheck className="w-4 h-4" /> Texas S-Corp
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900">Licensed & Insured</div>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
+            <div className="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
               <div className="flex items-center gap-1.5 text-emerald-600 text-xs font-bold uppercase mb-1">
                 <CheckCircle2 className="w-4 h-4" /> REO / HUD Standard
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900">100% Code Compliance</div>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
+            <div className="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition">
               <div className="flex items-center gap-1.5 text-purple-600 text-xs font-bold uppercase mb-1">
                 <Award className="w-4 h-4" /> 11 Core Capabilities
               </div>

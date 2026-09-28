@@ -4,8 +4,18 @@ import { SectionHeader } from "../common/SectionHeader";
 
 export const PortalPreview: React.FC = () => {
   return (
-    <section className="py-20 bg-white text-slate-900 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute inset-0 pointer-events-none opacity-10 z-0">
+        <img
+          src="/assets/cosmic/constellation-tech-network.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center mix-blend-multiply"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/50" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="Enterprise Technology & Reporting"
           title="Real-Time Photo Verification & 24-Hour Digital PCRs"
@@ -15,7 +25,7 @@ export const PortalPreview: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
           
           <div className="lg:col-span-6 space-y-4">
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
+            <div className="p-5 rounded-2xl bg-slate-50/90 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
               <div className="p-3 rounded-xl bg-slate-900 text-white shrink-0 shadow-sm">
                 <Camera className="w-5 h-5 text-amber-400" />
               </div>
@@ -27,7 +37,7 @@ export const PortalPreview: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
+            <div className="p-5 rounded-2xl bg-slate-50/90 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
               <div className="p-3 rounded-xl bg-slate-900 text-white shrink-0 shadow-sm">
                 <FileCheck2 className="w-5 h-5 text-amber-400" />
               </div>
@@ -39,7 +49,7 @@ export const PortalPreview: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
+            <div className="p-5 rounded-2xl bg-slate-50/90 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4 shadow-xs">
               <div className="p-3 rounded-xl bg-slate-900 text-white shrink-0 shadow-sm">
                 <ShieldCheck className="w-5 h-5 text-amber-400" />
               </div>

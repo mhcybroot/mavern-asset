@@ -9,6 +9,15 @@ export const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className="py-20 bg-slate-50 relative overflow-hidden">
+      {/* Subtle Light Watermark Blend Asset */}
+      <div className="absolute inset-0 pointer-events-none opacity-8 z-0">
+        <img
+          src="/assets/cosmic/cosmic-dunes.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center mix-blend-multiply"
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="Contact & Dispatch"
@@ -21,7 +30,7 @@ export const ContactSection: React.FC = () => {
             <ContactInfoCard />
           </div>
 
-          <div className="lg:col-span-7 bg-white rounded-3xl p-8 border border-slate-200 shadow-xl text-slate-900">
+          <div className="lg:col-span-7 bg-white/95 backdrop-blur-xs rounded-3xl p-8 border border-slate-200 shadow-xl text-slate-900">
             {submitted && feedbackMessage && (
               <div className="mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
