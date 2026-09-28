@@ -23,8 +23,8 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose HTTP port
-EXPOSE 80
+# Expose HTTP port 4001
+EXPOSE 4001
 
 # Run Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
