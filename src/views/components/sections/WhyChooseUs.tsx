@@ -9,52 +9,42 @@ export const WhyChooseUs: React.FC = () => {
       icon: Clock,
       title: "24 to 48-Hour Dispatch",
       desc: "Emergency securing, re-keying, and inspection reports dispatched rapidly to mitigate risk and prevent unauthorized occupancy.",
-      color: "from-amber-500 to-orange-600",
+      color: "text-amber-600 bg-amber-50 border-amber-200",
     },
     {
       icon: Camera,
       title: "Timestamped Photo Proof",
       desc: "Every work order includes comprehensive before, during, and after photos, GPS metadata, and detailed condition checklists.",
-      color: "from-fuchsia-600 to-pink-600",
+      color: "text-blue-600 bg-blue-50 border-blue-200",
     },
     {
       icon: Scale,
       title: "HOA & Code Compliance",
       desc: "We prevent municipal code violations, tall grass fines, and HOA citations through scheduled proactive asset maintenance.",
-      color: "from-emerald-500 to-teal-600",
+      color: "text-emerald-600 bg-emerald-50 border-emerald-200",
     },
     {
       icon: ShieldCheck,
       title: "Licensed, Bonded & Insured",
       desc: `Registered Texas ${COMPANY_INFO.legalStructure} operating with full general liability and workers compensation coverage.`,
-      color: "from-violet-600 to-purple-700",
+      color: "text-purple-600 bg-purple-50 border-purple-200",
     },
     {
       icon: Building,
       title: "Single-Vendor Simplicity",
       desc: "From initial lockbox install and trash-out to high-end tenant turns, manage your entire portfolio under one trusted vendor.",
-      color: "from-blue-600 to-indigo-700",
+      color: "text-indigo-600 bg-indigo-50 border-indigo-200",
     },
     {
       icon: Sparkles,
       title: "Value Optimization",
       desc: "Cost-effective handyman and renovation repairs aimed at maximizing property resale value and tenant absorption rates.",
-      color: "from-fuchsia-500 to-amber-500",
+      color: "text-rose-600 bg-rose-50 border-rose-200",
     },
   ];
 
   return (
-    <section id="why-us" className="py-20 border-b border-purple-500/15 relative overflow-hidden">
-      
-      {/* Background Cosmic Security Shield Asset with High Clarity */}
-      <div className="absolute right-[0px] top-6 w-96 h-96 pointer-events-none opacity-60 z-0">
-        <img
-          src="/assets/cosmic/cosmic-security-shield.jpg"
-          alt="Cosmic Security Shield"
-          className="w-full h-full object-cover rounded-full drop-shadow-[0_0_50px_rgba(124,58,237,0.4)]"
-        />
-      </div>
-
+    <section id="why-us" className="py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge="The MAVERN Advantage"
@@ -68,13 +58,13 @@ export const WhyChooseUs: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-3xl bg-[#140632]/85 border border-purple-500/20 hover:border-fuchsia-500/40 hover:bg-[#1a0842] transition-all duration-300 shadow-xl group backdrop-blur-md"
+                className="p-6 rounded-3xl bg-white border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 group shadow-xs"
               >
-                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${pt.color} text-white flex items-center justify-center mb-5 shadow-lg group-hover:scale-105 transition-transform`}>
+                <div className={`w-12 h-12 rounded-2xl border ${pt.color} flex items-center justify-center mb-5 shadow-xs group-hover:scale-105 transition-transform`}>
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 font-['Playfair_Display',Georgia,serif]">{pt.title}</h3>
-                <p className="text-sm text-purple-200/80 leading-relaxed">{pt.desc}</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Playfair_Display',Georgia,serif]">{pt.title}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed font-normal">{pt.desc}</p>
               </div>
             );
           })}

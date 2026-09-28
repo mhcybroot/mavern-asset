@@ -1,97 +1,81 @@
 import React from "react";
-import { X, CheckCircle, Clock, Shield, ArrowRight } from "lucide-react";
+import { X, CheckCircle2, Clock, ArrowRight } from "lucide-react";
 import type { ServiceItem } from "../../../models/service.model";
 import { ServiceIcon } from "../common/ServiceIcon";
 
 interface ServiceDetailModalProps {
-  service: ServiceItem | null;
+  service: ServiceItem;
   onClose: () => void;
-  onAddToQuote: (serviceId: string) => void;
+  onInstantQuote?: (serviceId: string) => void;
 }
 
 export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   service,
   onClose,
-  onAddToQuote,
+  onInstantQuote,
 }) => {
-  if (!service) return null;
-
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in">
-      <div className="bg-[#13072e] w-full max-w-xl rounded-3xl shadow-[0_0_50px_rgba(192,38,211,0.3)] border border-purple-500/30 overflow-hidden relative text-white">
-        <div className="bg-[#0b031f] p-6 flex items-start justify-between border-b border-purple-500/20">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-violet-600 to-fuchsia-600 flex items-center justify-center text-white shrink-0 shadow-lg shadow-purple-600/30">
-              <ServiceIcon name={service.iconName} className="w-6 h-6" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
+      <div className="bg-white rounded-3xl max-w-xl w-full border border-slate-200 shadow-2xl overflow-hidden relative">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition cursor-pointer z-10"
+        >
+          <X className="w-5 h-5" />
+        </button>
+
+        <div className="p-6 sm:p-8">
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-900">
+              <ServiceIcon name={service.iconName} className="w-6 h-6 text-amber-600" />
             </div>
             <div>
-              <span className="text-xs font-semibold text-fuchsia-400 uppercase tracking-wider">
-                MAVERN Full Scope Specification
-              </span>
-              <h3 className="text-xl font-bold text-white font-['Playfair_Display',Georgia,serif]">{service.title}</h3>
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-xl text-purple-300 hover:text-white hover:bg-purple-900/50 transition cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
-        </div>
-
-        <div className="p-6 space-y-5 max-h-[70vh] overflow-y-auto">
-          <div>
-            <h4 className="text-xs font-bold text-purple-400 uppercase tracking-wider mb-1.5">
-              Service Scope & Details
-            </h4>
-            <p className="text-sm text-purple-200/90 leading-relaxed">
-              {service.fullDesc}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3 p-4 rounded-2xl bg-[#1b0a3f]/80 border border-purple-500/20 text-xs">
-            <div className="flex items-center gap-2 text-purple-200">
-              <Clock className="w-4 h-4 text-amber-400 shrink-0" />
-              <span><strong>Turnaround:</strong> {service.turnaround}</span>
-            </div>
-            <div className="flex items-center gap-2 text-purple-200">
-              <Shield className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span><strong>Compliance:</strong> HUD / Fannie Mae</span>
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                <Clock className="w-3.5 h-3.5" />
+                <span>{service.turnaround} SLA</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1 font-['Playfair_Display',Georgia,serif]">
+                {service.title}
+              </h3>
             </div>
           </div>
 
-          <div>
-            <h4 className="text-xs font-bold text-purple-400 uppercase tracking-wider mb-2.5">
-              Included Deliverables & Tasks
+          <p className="text-slate-600 text-sm leading-relaxed mb-6">
+            {service.fullDesc}
+          </p>
+
+          <div className="mb-6">
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">
+              Core Scope of Work Included:
             </h4>
             <div className="space-y-2">
-              {service.features.map((feature, idx) => (
-                <div key={idx} className="flex items-start gap-2.5 text-xs text-purple-100">
-                  <CheckCircle className="w-4 h-4 text-fuchsia-400 shrink-0 mt-0.5" />
-                  <span>{feature}</span>
+              {service.features.map((feat, idx) => (
+                <div key={idx} className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-xs font-medium text-slate-800">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>{feat}</span>
                 </div>
               ))}
             </div>
           </div>
-        </div>
 
-        <div className="p-4 bg-[#0e0427] border-t border-purple-500/20 flex items-center justify-end gap-3">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 text-xs font-semibold text-purple-300 hover:text-white transition cursor-pointer"
-          >
-            Close
-          </button>
-          <button
-            onClick={() => {
-              onAddToQuote(service.id);
-              onClose();
-            }}
-            className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg flex items-center gap-2 transition cursor-pointer"
-          >
-            <span>Add To Work Order</span>
-            <ArrowRight className="w-4 h-4 text-amber-300" />
-          </button>
+          <div className="flex items-center gap-3 pt-2">
+            <button
+              onClick={onClose}
+              className="flex-1 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-bold text-xs uppercase tracking-wider transition cursor-pointer"
+            >
+              Close
+            </button>
+            <button
+              onClick={() => {
+                onClose();
+                onInstantQuote?.(service.id);
+              }}
+              className="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow-md cursor-pointer"
+            >
+              <span>Order Service</span>
+              <ArrowRight className="w-4 h-4 text-amber-400" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -15,9 +15,8 @@ export const FooterLiveStatus: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-12 mb-12 border-b border-purple-500/20">
-      {/* Live System & Dispatch Status */}
-      <div className="p-5 rounded-2xl bg-gradient-to-r from-purple-950/60 to-[#12052c]/80 border border-purple-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-12 mb-12 border-b border-slate-800">
+      <div className="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3.5">
           <div className="relative flex items-center justify-center">
             <span className="w-3.5 h-3.5 rounded-full bg-emerald-500 animate-ping absolute" />
@@ -32,28 +31,27 @@ export const FooterLiveStatus: React.FC = () => {
                 ACTIVE
               </span>
             </div>
-            <p className="text-[11px] text-purple-300/80 mt-0.5">
+            <p className="text-[11px] text-slate-400 mt-0.5">
               DFW Corridor, Tarrant, Dallas, Denton & Collin Counties on standby.
             </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3 text-xs bg-purple-900/40 px-3.5 py-2 rounded-xl border border-purple-500/20 shrink-0">
-          <Activity className="w-4 h-4 text-fuchsia-400" />
+        <div className="flex items-center gap-3 text-xs bg-slate-900 px-3.5 py-2 rounded-xl border border-slate-700 shrink-0">
+          <Activity className="w-4 h-4 text-amber-400" />
           <div>
-            <div className="text-[10px] text-purple-300">Avg First-Response</div>
+            <div className="text-[10px] text-slate-400">Avg First-Response</div>
             <div className="text-white font-bold text-xs font-mono">1.4 Hours</div>
           </div>
         </div>
       </div>
 
-      {/* Servicer Alert Bulletin Subscription */}
-      <div className="p-5 rounded-2xl bg-[#100326]/80 border border-purple-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-wider">
             Loan Servicer Dispatch Digest
           </h4>
-          <p className="text-[11px] text-purple-300/80 mt-0.5">
+          <p className="text-[11px] text-slate-400 mt-0.5">
             Receive monthly Texas code enforcement changes & freeze alerts.
           </p>
         </div>
@@ -71,11 +69,11 @@ export const FooterLiveStatus: React.FC = () => {
               placeholder="servicer@bank.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-purple-950/80 border border-purple-500/40 rounded-xl px-3 py-2 text-xs text-white placeholder-purple-400/50 focus:outline-none focus:border-fuchsia-400 w-full sm:w-48"
+              className="bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-500 w-full sm:w-48"
             />
             <button
               type="submit"
-              className="px-3.5 py-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 transition shrink-0 cursor-pointer shadow-lg shadow-purple-600/30"
+              className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold flex items-center gap-1.5 transition shrink-0 cursor-pointer shadow-md"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Join</span>

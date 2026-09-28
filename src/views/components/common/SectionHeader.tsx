@@ -13,21 +13,23 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   subtitle,
   align = "center",
 }) => {
-  const alignmentClass = align === "center" ? "text-center mx-auto" : "text-left";
+  const isCenter = align === "center";
 
   return (
-    <div className={`max-w-3xl mb-12 ${alignmentClass}`}>
+    <div className={`mb-12 ${isCenter ? "text-center max-w-3xl mx-auto" : "max-w-2xl"}`}>
       {badge && (
-        <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-fuchsia-950/70 text-fuchsia-300 border border-fuchsia-500/40 mb-4 shadow-[0_0_15px_rgba(217,70,239,0.2)]">
-          <span className="w-1.5 h-1.5 rounded-full bg-fuchsia-400 animate-pulse shadow-[0_0_8px_#e879f9]" />
-          {badge}
-        </span>
+        <div className={`inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-4 border border-slate-200 ${
+          isCenter ? "mx-auto" : ""
+        }`}>
+          <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+          <span>{badge}</span>
+        </div>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight font-['Playfair_Display',Georgia,serif]">
+      <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 font-['Playfair_Display',Georgia,serif]">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-sm md:text-base text-purple-200/80 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
           {subtitle}
         </p>
       )}

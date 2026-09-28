@@ -8,17 +8,17 @@ export const CoveragePage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#090217] text-white">
-      <div className="py-14 border-b border-purple-500/15 bg-[#100529]">
+    <div className="bg-white text-slate-900">
+      <div className="py-14 border-b border-slate-200 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-950/80 text-fuchsia-300 text-xs font-semibold mb-4 border border-fuchsia-500/30">
-            <MapPin className="w-3.5 h-3.5 text-fuchsia-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-slate-800 text-xs font-bold mb-4 border border-slate-200 shadow-xs">
+            <MapPin className="w-3.5 h-3.5 text-amber-600" />
             <span>Arlington, TX Base • North Texas Corridor</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
             Operational Coverage & Regional Hubs
           </h1>
-          <p className="text-purple-200/90 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
             Headquartered at {COMPANY_INFO.address.fullAddress}, we provide rapid response field coverage across Arlington, Fort Worth, Dallas, and surrounding counties.
           </p>
         </div>
@@ -26,34 +26,34 @@ export const CoveragePage: React.FC = () => {
 
       <CoverageArea />
 
-      <section className="py-16 bg-[#070114] border-t border-purple-500/15">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#140632] rounded-3xl p-8 sm:p-10 border border-purple-500/25 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
             <div>
-              <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-emerald-600 text-xs font-bold uppercase tracking-wider mb-2">
                 <ShieldCheck className="w-4 h-4" /> Need Coverage in Your Area?
               </div>
-              <h3 className="text-2xl font-bold text-white mb-1 font-['Playfair_Display',Georgia,serif]">
+              <h3 className="text-2xl font-bold text-slate-950 mb-1 font-['Playfair_Display',Georgia,serif]">
                 Emergency Dispatch Across Texas
               </h3>
-              <p className="text-purple-300/70 text-xs sm:text-sm">
+              <p className="text-slate-600 text-xs sm:text-sm font-normal">
                 Same-day re-keying, emergency board-ups, and inspection crews ready to roll.
               </p>
             </div>
             <div className="flex items-center gap-3 shrink-0">
               <a
                 href={`tel:${COMPANY_INFO.contact.phone.replace(/[^0-9]/g, "")}`}
-                className="px-5 py-3 bg-purple-950/80 hover:bg-purple-900 text-white text-xs font-bold uppercase tracking-wider rounded-2xl border border-purple-500/30 flex items-center gap-2 transition"
+                className="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-bold uppercase tracking-wider rounded-2xl border border-slate-300 flex items-center gap-2 transition"
               >
-                <Phone className="w-4 h-4 text-fuchsia-400" />
+                <Phone className="w-4 h-4 text-amber-600" />
                 <span>Call Hotline</span>
               </a>
               <button
                 onClick={() => navigate("/quote")}
-                className="px-5 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white text-xs font-bold uppercase tracking-wider rounded-2xl shadow-lg flex items-center gap-2 transition cursor-pointer"
+                className="px-5 py-3 bg-slate-950 hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider rounded-2xl shadow-md flex items-center gap-2 transition cursor-pointer"
               >
                 <span>Dispatch Order</span>
-                <ArrowRight className="w-4 h-4 text-amber-300" />
+                <ArrowRight className="w-4 h-4 text-amber-400" />
               </button>
             </div>
           </div>
