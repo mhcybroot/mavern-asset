@@ -1,0 +1,11 @@
+services:
+  mavern-asset:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mavern-asset-app
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #0A1128;
+    --bg-card: rgba(15, 30, 54, 0.85);
+    --border-accent: rgba(212, 175, 55, 0.25);
+    --accent-gold: #D4AF37;
+  }
+
+  html.theme-navy {
+    background-color: #0A1128;
+    color: #F8FAFC;
+  }
+
+  html.theme-cosmic {
+    background-color: #090217;
+    color: #F1F5F9;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  
+  .font-sans-ui {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Institutional Navy & Brushed Gold Overrides */
+html.theme-navy body,
+html.theme-navy [class*="bg-[#090217]"],
+html.theme-navy [class*="bg-[#05010e]"],
+html.theme-navy [class*="bg-[#04010a]"],
+html.theme-navy [class*="bg-[#070114]"],
+html.theme-navy [class*="bg-[#0c0423]"],
+html.theme-navy [class*="bg-[#0e0427]"] {
+  background-color: #0A1128 !important;
+}
+
+html.theme-navy [class*="bg-[#150734]"],
+html.theme-navy [class*="bg-[#140632]"],
+html.theme-navy [class*="bg-[#1b0742]"],
+html.theme-navy [class*="bg-[#100326]"],
+html.theme-navy [class*="bg-[#0f0426]"],
+html.theme-navy [class*="bg-[#180838]"],
+html.theme-navy [class*="bg-purple-950"],
+html.theme-navy [class*="bg-purple-900"] {
+  background-color: rgba(15, 30, 54, 0.9) !important;
+}
+
+html.theme-navy [class*="border-purple-"],
+html.theme-navy [class*="border-fuchsia-"] {
+  border-color: rgba(212, 175, 55, 0.28) !important;
+}
+
+html.theme-navy [class*="text-fuchsia-400"],
+html.theme-navy [class*="text-fuchsia-300"],
+html.theme-navy [class*="text-purple-300"] {
+  color: #D4AF37 !important;
+}
+
+html.theme-navy [class*="from-violet-600"][class*="to-fuchsia-600"] {
+  background-image: linear-gradient(to right, #D4AF37, #B8860B) !important;
+  color: #070D1E !important;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35) !important;
+}
+
+html.theme-navy [class*="from-violet-600"][class*="via-purple-600"] {
+  background-image: linear-gradient(to right, #D4AF37, #E5B869, #C5A880) !important;
+  color: #070D1E !important;
+}
+
+html.theme-navy [class*="from-violet-600"][class*="via-fuchsia-600"] {
+  background-image: linear-gradient(to top right, #D4AF37, #F59E0B, #FEF08A) !important;
+}
+
+.cosmic-gradient {
+  background: radial-gradient(circle at 50% 20%, #162846 0%, #0F1E36 50%, #0A1128 100%);
+}
+
+html.theme-cosmic .cosmic-gradient {
+  background: radial-gradient(circle at 50% 20%, #2a0b5a 0%, #150638 50%, #090217 100%);
+}
+
+.cosmic-glass {
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-accent);
+}
