@@ -15,6 +15,10 @@ export interface CompanyInfo {
     readonly dispatchHours: string;
     readonly emergencyLine: string;
   };
+  readonly leadership?: {
+    readonly ownerName: string;
+    readonly title: string;
+  };
   readonly badges: readonly string[];
 }
 
@@ -30,13 +34,17 @@ export const COMPANY_INFO: CompanyInfo = {
     fullAddress: "Apt 243, 1000 W Mitchell St, Arlington, TX 76013",
   },
   contact: {
-    phone: "(817) 555-0199",
-    email: "contact@mavernasset.com",
+    phone: "+1 (347) 806-6134",
+    email: "mavern.assets@gmail.com",
     dispatchHours: "Mon - Sat: 7:00 AM - 7:00 PM CST",
     emergencyLine: "24/7 Priority Dispatch Available",
   },
+  leadership: {
+    ownerName: "Md Mahbub Mahim",
+    title: "Managing Principal & Operations Director",
+  },
   badges: [
-    "S-Corp Registered",
+    "Texas S-Corp Registered",
     "Fully Insured & Bonded",
     "24-48 Hr Fast Turnaround",
     "US HUD & REO Compliant",
