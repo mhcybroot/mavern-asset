@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
             <Building2 className="w-5 h-5 text-amber-300" />
           </div>
           <div>
-            <div className="font-extrabold text-lg sm:text-xl tracking-tight leading-none text-slate-900 font-['Playfair_Display',Georgia,serif]">
+            <div className="font-extrabold text-lg sm:text-xl tracking-tight leading-none text-slate-900 font-display">
               MAVERN <span className="text-amber-600 font-normal italic">ASSET</span>
             </div>
             <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-0.5 flex items-center gap-1">

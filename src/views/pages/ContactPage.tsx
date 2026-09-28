@@ -13,7 +13,7 @@ export const ContactPage: React.FC = () => {
               <PhoneCall className="w-3.5 h-3.5 text-amber-600" />
               Direct Field Operations Desk
             </span>
-            <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+            <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-display">
               Contact & Operations Dispatch
             </h1>
             <p className="text-slate-600 text-sm sm:text-base max-w-2xl leading-relaxed mb-6 font-normal">

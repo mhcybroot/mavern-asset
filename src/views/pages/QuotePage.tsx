@@ -12,7 +12,7 @@ export const QuotePage: React.FC = () => {
               <Zap className="w-4 h-4 text-amber-600" />
               <span>Instant Dispatch Generator</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-black text-slate-950 mb-3 font-['Playfair_Display',Georgia,serif]">
+            <h1 className="text-3xl sm:text-4xl font-black text-slate-950 mb-3 font-display">
               Request an Estimate or Submit a Work Order
             </h1>
             <p className="text-slate-600 text-xs sm:text-sm max-w-2xl leading-relaxed mb-4 font-normal">

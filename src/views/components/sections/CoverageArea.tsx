@@ -30,7 +30,7 @@ export const CoverageArea: React.FC = () => {
                   <MapPin className="w-6 h-6 text-amber-400" />
                 </div>
                 <div>
-                  <h4 className="text-slate-900 font-bold text-base mb-1 font-['Playfair_Display',Georgia,serif]">HQ Operating Address</h4>
+                  <h4 className="text-slate-900 font-bold text-base mb-1 font-display">HQ Operating Address</h4>
                   <p className="text-slate-600 text-sm leading-snug font-normal">
                     {COMPANY_INFO.name}<br />
                     {COMPANY_INFO.address.suite}, {COMPANY_INFO.address.street}<br />
@@ -57,7 +57,7 @@ export const CoverageArea: React.FC = () => {
 
           <div className="lg:col-span-6">
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm">
-              <h3 className="text-xl font-extrabold text-slate-900 mb-6 flex items-center gap-2 font-['Playfair_Display',Georgia,serif]">
+              <h3 className="text-xl font-extrabold text-slate-900 mb-6 flex items-center gap-2 font-display">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
                 Active Preservation Zones
               </h3>

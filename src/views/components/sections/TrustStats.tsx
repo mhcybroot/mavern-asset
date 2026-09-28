@@ -48,7 +48,7 @@ export const TrustStats: React.FC = () => {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-2xl font-black text-slate-950 tracking-tight font-['Playfair_Display',Georgia,serif]">
+                  <div className="text-2xl font-black text-slate-950 tracking-tight font-display">
                     {stat.value}
                   </div>
                   <div className="text-xs font-bold text-slate-800 uppercase tracking-wide mt-0.5">

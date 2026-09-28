@@ -15,7 +15,7 @@ export const ServicesPage: React.FC = () => {
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               S-Corp Certified Capabilities
             </span>
-            <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+            <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-display">
               Property Preservation & Asset Management Services
             </h1>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-normal">

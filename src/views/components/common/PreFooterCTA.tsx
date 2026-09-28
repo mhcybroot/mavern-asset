@@ -16,7 +16,7 @@ export const PreFooterCTA: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>North Texas Active Dispatch Network</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white mb-3 font-['Playfair_Display',Georgia,serif]">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white mb-3 font-display">
               Ready to Protect & Monetize Your Property Portfolio?
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">

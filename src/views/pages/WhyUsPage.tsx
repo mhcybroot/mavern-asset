@@ -17,7 +17,7 @@ export const WhyUsPage: React.FC = () => {
             <Award className="w-4 h-4 text-amber-600" />
             <span>Institutional Credibility & Compliance</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-display">
             Why Asset Managers Rely on MAVERN
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
@@ -33,7 +33,7 @@ export const WhyUsPage: React.FC = () => {
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
           <ShieldCheck className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-slate-900 mb-2 font-['Playfair_Display',Georgia,serif]">Ready to onboard a reliable vendor?</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-2 font-display">Ready to onboard a reliable vendor?</h3>
           <p className="text-slate-600 text-sm mb-6 max-w-xl mx-auto font-normal">
             Contact our operations team today or submit an immediate work order estimate for your single-family, multi-family, or REO asset.
           </p>

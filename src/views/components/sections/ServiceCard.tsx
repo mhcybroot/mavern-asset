@@ -44,7 +44,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       </div>
 
       <div className="p-6 flex flex-col grow">
-        <h3 className="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2 font-['Playfair_Display',Georgia,serif]">
+        <h3 className="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2 font-display">
           {service.title}
         </h3>
 

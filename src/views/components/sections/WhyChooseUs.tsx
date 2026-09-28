@@ -63,7 +63,7 @@ export const WhyChooseUs: React.FC = () => {
                 <div className={`w-12 h-12 rounded-2xl border ${pt.color} flex items-center justify-center mb-5 shadow-xs group-hover:scale-105 transition-transform`}>
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Playfair_Display',Georgia,serif]">{pt.title}</h3>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 font-display">{pt.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-normal">{pt.desc}</p>
               </div>
             );

@@ -17,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onGetStarted }) => {
             <span>{COMPANY_INFO.name} • {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.1] mb-6 font-['Playfair_Display',Georgia,serif]">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.1] mb-6 font-display">
             We Protect, Preserve & Turn Your Assets Into <span className="italic font-normal text-amber-700 underline decoration-amber-500/30 decoration-wavy">Peak Market Value.</span>
           </h1>
 

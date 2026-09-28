@@ -34,7 +34,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 <Clock className="w-3.5 h-3.5" />
                 <span>{service.turnaround} SLA</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1 font-['Playfair_Display',Georgia,serif]">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1 font-display">
                 {service.title}
               </h3>
             </div>

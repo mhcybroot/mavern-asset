@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-slate-900 to-amber-600 flex items-center justify-center text-white shadow-md">
                   <Building2 className="w-5 h-5 text-amber-300" />
                 </div>
-                <span className="text-white font-extrabold text-xl tracking-tight font-['Playfair_Display',Georgia,serif]">
+                <span className="text-white font-extrabold text-xl tracking-tight font-display">
                   MAVERN <span className="text-amber-500 font-normal italic">ASSET</span>
                 </span>
               </div>

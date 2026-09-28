@@ -10,7 +10,7 @@ export const ContactInfoCard: React.FC = () => {
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
           {COMPANY_INFO.legalStructure}
         </div>
-        <h3 className="text-2xl font-black mb-3 text-white font-['Playfair_Display',Georgia,serif]">{COMPANY_INFO.name}</h3>
+        <h3 className="text-2xl font-black mb-3 text-white font-display">{COMPANY_INFO.name}</h3>
         <p className="text-slate-300 text-xs leading-relaxed mb-8 font-normal">
           Ready to handle single asset dispatches or large recurring REO portfolios with strict SLA adherence.
         </p>

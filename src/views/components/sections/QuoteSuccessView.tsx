@@ -24,7 +24,7 @@ export const QuoteSuccessView: React.FC<QuoteSuccessViewProps> = ({
           <CheckCircle2 className="w-9 h-9" />
         </div>
         
-        <h3 className="text-2xl font-black text-slate-950 mb-2 font-['Playfair_Display',Georgia,serif]">Work Order Request Generated!</h3>
+        <h3 className="text-2xl font-black text-slate-950 mb-2 font-display">Work Order Request Generated!</h3>
         <p className="text-slate-600 text-sm mb-6">
           Dispatch Ticket: <span className="font-mono font-bold text-amber-700 text-base">{confirmationId}</span>
         </p>

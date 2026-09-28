@@ -23,7 +23,7 @@ export const HomePage: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             11 Core Preservation & Maintenance Capabilities
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 font-['Playfair_Display',Georgia,serif]">
+          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 font-display">
             Complete Turn-Key Asset Solutions
           </h2>
           <p className="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto mb-6 font-normal">

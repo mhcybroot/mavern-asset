@@ -20,7 +20,7 @@ export const PortalPreview: React.FC = () => {
                 <Camera className="w-5 h-5 text-amber-400" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold text-sm mb-1 font-['Playfair_Display',Georgia,serif]">GPS-Timestamped Photo Logs</h4>
+                <h4 className="text-slate-900 font-bold text-sm mb-1 font-display">GPS-Timestamped Photo Logs</h4>
                 <p className="text-slate-600 text-xs leading-relaxed">
                   Before, during, and after photos stamped with precise geocoordinates, ensuring 100% Fannie Mae & HUD audit compliance.
                 </p>
@@ -32,7 +32,7 @@ export const PortalPreview: React.FC = () => {
                 <FileCheck2 className="w-5 h-5 text-amber-400" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold text-sm mb-1 font-['Playfair_Display',Georgia,serif]">24-48h Condition Reports (PCR)</h4>
+                <h4 className="text-slate-900 font-bold text-sm mb-1 font-display">24-48h Condition Reports (PCR)</h4>
                 <p className="text-slate-600 text-xs leading-relaxed">
                   Detailed inspection documentation including roof integrity, foundation condition, plumbing winterization checks, and repair estimates.
                 </p>
@@ -44,7 +44,7 @@ export const PortalPreview: React.FC = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-400" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold text-sm mb-1 font-['Playfair_Display',Georgia,serif]">Zero Code Violation Guarantee</h4>
+                <h4 className="text-slate-900 font-bold text-sm mb-1 font-display">Zero Code Violation Guarantee</h4>
                 <p className="text-slate-600 text-xs leading-relaxed">
                   Proactive recurring maintenance schedules prevent municipal tall-grass fines, vacant building registration penalties, and HOA citations.
                 </p>

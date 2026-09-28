@@ -15,7 +15,7 @@ export const CoveragePage: React.FC = () => {
             <MapPin className="w-3.5 h-3.5 text-amber-600" />
             <span>Arlington, TX Base • North Texas Corridor</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight mb-4 font-display">
             Operational Coverage & Regional Hubs
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
@@ -33,7 +33,7 @@ export const CoveragePage: React.FC = () => {
               <div className="flex items-center gap-2 text-emerald-600 text-xs font-bold uppercase tracking-wider mb-2">
                 <ShieldCheck className="w-4 h-4" /> Need Coverage in Your Area?
               </div>
-              <h3 className="text-2xl font-bold text-slate-950 mb-1 font-['Playfair_Display',Georgia,serif]">
+              <h3 className="text-2xl font-bold text-slate-950 mb-1 font-display">
                 Emergency Dispatch Across Texas
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm font-normal">

@@ -25,7 +25,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
           <span>{badge}</span>
         </div>
       )}
-      <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 font-['Playfair_Display',Georgia,serif]">
+      <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 font-display">
         {title}
       </h2>
       {subtitle && (
