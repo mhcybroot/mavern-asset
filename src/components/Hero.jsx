@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, ShieldCheck, ArrowRight, Sparkles, CheckCircle2, Star, Clock, MapPin } from 'lucide-react';
+import { Phone, ShieldCheck, ArrowRight, Sparkles, CheckCircle2, Star } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -112,12 +112,6 @@ export default function Hero() {
                     Active Crew
                   </span>
                 </div>
-              </div>
-
-              {/* Floating Top Badge */}
-              <div className="absolute -top-4 -left-4 bg-amber-500 text-slate-950 font-bold px-3.5 py-1.5 rounded-lg shadow-lg text-xs flex items-center gap-1.5 animate-bounce">
-                <Clock className="w-3.5 h-3.5" />
-                <span>Mon - Sat: 7am - 7pm CST</span>
               </div>
 
             </div>

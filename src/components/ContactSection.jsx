@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -99,18 +99,6 @@ export default function ContactSection() {
                   mavern.assets@gmail.com
                 </a>
                 <p className="text-xs text-slate-500">Fast digital estimates & proposal submissions</p>
-              </div>
-            </div>
-
-            {/* Hours Card */}
-            <div className="p-6 rounded-2xl bg-[#fafaf9] border border-slate-200 shadow-sm flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-amber-600/20">
-                <Clock className="w-6 h-6 text-white" />
-              </div>
-              <div className="space-y-1">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">Business Hours</h4>
-                <p className="text-base font-bold text-slate-900">Mon - Sat: 7:00 AM - 7:00 PM CST</p>
-                <p className="text-xs text-slate-500">Sunday: Closed for Crew Rest</p>
               </div>
             </div>
 

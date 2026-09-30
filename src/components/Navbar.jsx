@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, MapPin, Clock, Menu, X, ShieldCheck, ChevronRight, Trees } from 'lucide-react';
+import { Phone, Mail, MapPin, Menu, X, ShieldCheck, ChevronRight, Trees } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,10 +32,6 @@ export default function Navbar() {
             <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
               <MapPin className="w-3.5 h-3.5 text-amber-500" />
               Apt 243, 1000 W Mitchell St, Arlington, TX 76013
-            </span>
-            <span className="hidden sm:inline-flex items-center gap-1.5 text-slate-400">
-              <Clock className="w-3.5 h-3.5 text-emerald-400" />
-              Mon - Sat: 7:00 AM - 7:00 PM CST
             </span>
           </div>
           <div className="flex items-center gap-4">

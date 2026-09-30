@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Trees, ShieldCheck, ArrowUp } from 'lucide-react';
+import { Phone, Mail, MapPin, Trees, ShieldCheck, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -84,9 +84,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Contact & Hours */}
+          {/* Col 4: Contact Info */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">Contact & Hours</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-white">Contact Info</h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
@@ -99,10 +99,6 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                 <a href="mailto:mavern.assets@gmail.com" className="hover:text-white">mavern.assets@gmail.com</a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Clock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span>Mon - Sat: 7:00 AM - 7:00 PM CST</span>
               </li>
             </ul>
           </div>
