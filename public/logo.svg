@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <defs>
+    <linearGradient id="brandBg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="brandGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="markShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Left Icon Mark -->
+  <g transform="translate(10, 10)">
+    <rect width="100" height="100" rx="26" fill="url(#brandBg)" stroke="#334155" stroke-width="1.5" filter="url(#markShadow)"/>
+    <g transform="translate(20, 20) scale(2.5)" stroke="url(#brandGold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+      <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+      <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+      <path d="M10 6h4"/>
+      <path d="M10 10h4"/>
+      <path d="M10 14h4"/>
+      <path d="M10 18h4"/>
+    </g>
+  </g>
+
+  <!-- Typography: MAVERN ASSET -->
+  <text x="130" y="65" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="-1" fill="#0f172a">
+    MAVERN <tspan fill="#d97706" font-style="italic" font-weight="500">ASSET</tspan>
+  </text>
+
+  <!-- Subtitle: MANAGEMENT LLC • TEXAS S-CORP -->
+  <g transform="translate(132, 86)">
+    <!-- Small shield icon -->
+    <path d="M7 1.5 L12 3.5 V7.5 C12 10.5 7 13 7 13 C7 13 2 10.5 2 7.5 V3.5 Z" fill="none" stroke="#059669" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.5 7 L6 8.5 L9.5 5" fill="none" stroke="#059669" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="18" y="10" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="2" fill="#64748b" text-transform="uppercase">
+      MANAGEMENT LLC • TEXAS S-CORP
+    </text>
+  </g>
+</svg>
