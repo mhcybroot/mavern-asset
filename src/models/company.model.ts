@@ -34,7 +34,7 @@ export const COMPANY_INFO: CompanyInfo = {
     fullAddress: "Apt 243, 1000 W Mitchell St, Arlington, TX 76013",
   },
   contact: {
-    phone: "+1 (347) 806-6134",
+    phone: "(682) 206-0601",
     email: "mavern.assets@gmail.com",
     dispatchHours: "Mon - Sat: 7:00 AM - 7:00 PM CST",
     emergencyLine: "24/7 Priority Dispatch Available",
