@@ -110,7 +110,7 @@ export const Footer: React.FC = () => {
               © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved. | {COMPANY_INFO.legalStructure}
             </div>
             <div className="flex flex-wrap items-center gap-6">
-              <span className="hover:text-slate-800 cursor-pointer">Privacy Policy</span>
+              <Link to="/privacy" className="hover:text-slate-800 cursor-pointer transition-colors">Privacy Policy</Link>
               <span className="hover:text-slate-800 cursor-pointer">Terms of Service</span>
               <span className="hover:text-slate-800 cursor-pointer">GSE / HUD Guidelines</span>
               <span className="text-amber-700 font-medium">Equal Housing Opportunity Partner</span>

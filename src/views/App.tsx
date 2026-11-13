@@ -10,6 +10,7 @@ import { WhyUsPage } from "./pages/WhyUsPage";
 import { CoveragePage } from "./pages/CoveragePage";
 import { QuotePage } from "./pages/QuotePage";
 import { ContactPage } from "./pages/ContactPage";
+import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
 
 export const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ export const App: React.FC = () => {
               <Route path="/coverage" element={<CoveragePage />} />
               <Route path="/quote" element={<QuotePage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy" element={<PrivacyPolicyPage />} />
               <Route path="*" element={<HomePage />} />
             </Routes>
           </main>
